@@ -5,7 +5,7 @@ Unix timestamp manipulation utility
 ## Installation
 
 ```bash
-yay -S timestamp          # Arch Linux (AUR)
+yay -S timestamp-tool          # Arch Linux (AUR)
 cargo install --path .    # From source
 ```
 
