@@ -1,6 +1,6 @@
 # timestamp
 
-Unix timestamp utility.
+Unix timestamp manipulation utility
 
 ## Installation
 
