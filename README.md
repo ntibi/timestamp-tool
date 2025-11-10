@@ -1,4 +1,4 @@
-# ts
+# timestamp
 
 Timestamp utility for unix timestamps.
 
