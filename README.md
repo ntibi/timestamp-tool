@@ -1,59 +1,25 @@
 # timestamp
 
-Timestamp utility for unix timestamps.
+Unix timestamp utility.
 
 ## Installation
 
 ```bash
-cargo install --path .
-```
-
-Or build release binary:
-
-```bash
-cargo build --release
-# Binary at ./target/release/timestamp
+yay -S timestamp          # Arch Linux (AUR)
+cargo install --path .    # From source
 ```
 
 ## Usage
 
-### Get current timestamp
-
 ```bash
 timestamp
 # 1762736502
-```
 
-### Time since timestamp
-
-```bash
 timestamp 1762736000
 # 8m 24s ago
 
-timestamp 9999999999
-# 261years 8days 10h 44m 52s in the future
-```
-
-### Difference between timestamps
-
-```bash
 timestamp 1762736000 1762826000
 # 1day 1h
 ```
 
-### Timestamp formats
-
-Automatically detects seconds or milliseconds based on magnitude:
-- `< 10_000_000_000` → seconds
-- `≥ 10_000_000_000` → milliseconds
-
-```bash
-timestamp 1762736000      # seconds
-timestamp 1762736000000   # milliseconds
-```
-
-## Help
-
-```bash
-timestamp --help
-```
+Automatically detects seconds or milliseconds (`< 10_000_000_000` → seconds, `≥ 10_000_000_000` → milliseconds).
